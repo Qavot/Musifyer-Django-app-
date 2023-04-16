@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div>
+        <h1 id="ty"><b>MUSIFYER</b></h1><br>
+        <p id="buba">Опишите Ваше настроение, и алгоритмы подберут Вам плейлист из треков Ваших любимых артистов, с помощью которого Вы сможете погрузиться в мир музыки.</p>
+        <form method="POST">
+            {% csrf_token %}
+            <button class="btn btn-success" name="89">Начать!</button>
+        </form>
+    </div>
+
+{% endblock %}

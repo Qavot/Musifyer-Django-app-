@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Создание{% endblock %}
+
+{% block content %}
+    <div class = 'alert alert-primary'>
+        <style>
+            body {
+                background-image: url('static/main/img/roky.jpg');
+            }
+        </style>
+        <a href={{ link1 }} style="text-decoration: none"><p>1){{ values1 }}</p></a>
+        <a href={{ link2 }} style="text-decoration: none"><p>2){{ values2 }}</p></a>
+        <a href={{ link3 }} style="text-decoration: none"><p>3){{ values3 }}</p></a>
+        <a href={{ link4 }} style="text-decoration: none"><p>4){{ values4 }}</p></a>
+        <a href={{ link5 }} style="text-decoration: none"><p>5){{ values5 }}</p></a>
+        <a href={{ link6 }} style="text-decoration: none"><p>6){{ values6 }}</p></a>
+        <a href={{ link7 }} style="text-decoration: none"><p>7){{ values7 }}</p></a>
+        <a href={{ link8 }} style="text-decoration: none"><p>8){{ values8 }}</p></a>
+        <a href={{ link9 }} style="text-decoration: none"><p>9){{ values9 }}</p></a>
+        <a href={{ link10 }} style="text-decoration: none"><p>10){{ values10 }}</p></a>
+    </div>
+    <a href="{% url 'create' %}"><button class="btn btn-light" id="duren">Добавить</button></a>
+    <iframe src="{{ karapuz1 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="fr"></iframe>
+    <iframe src="{{ karapuz2 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="ar"></iframe>
+    <iframe src="{{ karapuz3 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="br"></iframe>
+    <iframe src="{{ karapuz4 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="dr"></iframe>
+    <iframe src="{{ karapuz5 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="qr"></iframe>
+    <iframe src="{{ karapuz6 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="wr"></iframe>
+    <iframe src="{{ karapuz7 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="er"></iframe>
+    <iframe src="{{ karapuz8 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="rr"></iframe>
+    <iframe src="{{ karapuz9 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="tr"></iframe>
+    <iframe src="{{ karapuz10 }}" width="220" height="230"  frameborder="0" allowtransparency="true" allow="encrypted-media" id="yr"></iframe>
+{% endblock %}>

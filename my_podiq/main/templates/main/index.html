@@ -1,0 +1,44 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div>
+        <h1 id="cush"><b>{{ title }}</b></h1><br>
+        <p id="kach">Создание плейлиста</p>
+        <style>
+            body {
+                background-image: url('static/main/img/chur.jpg');
+            }
+        </style>
+        <form method="POST" id="34">
+            {% csrf_token %}
+            <p id="kacch">1)Оцените сегодняшнюю погоду в Вашем городе.</p>
+            <div id="coack1">
+                <input type="radio" id="cp1" name="2" value='0.93'>
+                <label for="cp1">Хорошая</label>
+                <input type="radio" id="Дуб1" name="2" value='0.66'>
+                <label for="Дуб1">Нормальная</label>
+                <input type="radio" id="ops1" name="2" value='0.33'>
+                <label for="ops1">Плохая</label>
+            </div>
+            <p id="ruletka">3)Оцените ваше настроение от 1-100:</p>
+            <input type="range" min="1" max="100" value="50" class="form-range" name="slider" id="qq">
+            <p id="pochka">2)Какое сейчас время дня?</p>
+            <div id="coack" >
+                <input type="radio" id="cp" name="1" value="0.93">
+                <label for="cp">Утро</label>
+                <input type="radio" id="Дуб" name="1" value="0.66">
+                <label for="Дуб">День</label>
+                <input type="radio" id="ops" name="1" value="0.33">
+                <label for="ops">Вечер</label>
+            </div>
+
+            <p id="chupic">4)Введите имена исполнителей через ";"     :</p>
+            <input type="text" id="name" name="name" required size="10"><br>
+            <button class="btn btn-primary" name="6">Создать!</button>
+
+        </form>
+    </div>
+
+{% endblock %}

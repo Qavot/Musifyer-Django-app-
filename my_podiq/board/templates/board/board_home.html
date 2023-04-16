@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Плэйлисты{% endblock %}
+
+{% block content %}
+    <h1 id="yoy">Созданные другими пользователями плейлисты</h1>
+    <div class="features">
+        {% if news %}
+            {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+                <p id="rtg">{{ el.full_text }}</p>
+                <p>{{ el.date }}</p>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>Записей еще нет :(</p>
+        {% endif %}
+    </div>
+{% endblock %}
