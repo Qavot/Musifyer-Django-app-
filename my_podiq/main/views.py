@@ -42,7 +42,7 @@ def about(request):
 
 
     def get_token():
-        auth_string = '99cc3d6bf7484fe78ec33f9244587031' + ':' + 'c76f4ca9d7374174a25606dd27dee620'
+        auth_string = 'secret_code' + ':' + 'secret+code'
         auth_bytes = auth_string.encode("utf-8")
         auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
 
